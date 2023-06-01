@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/loco.css">
+    <link rel="stylesheet" href="../stylesheets/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+  <link rel="icon" href="../src/imges/长.png" style="width: 30px;" >
+    <title><%= title %></title>
+</head>
+
+<body>
+
+
+    <div class="loadinganimation">
+        <video autoplay muted loop src="../public/videos/"></video>
+        <div class="loding">
+            <div class="logo">
+                <img src="../src/imges/7.png" alt="">
+            </div>
+            <div class="loadingtext">
+                <h1 id="one">Savoring</h1>
+                <h1 id="two">Delicious </h1>
+                <h1 id="three"> Moments </h1>
+            </div>
+        </div>
+    </div>
+    <div class="circale"></div>
+    <div id="main">
+        <div id="landingpage" class="section">
+            <div class="nav">
+                <div id="left">
+                    <img src="../src/imges/7.png" alt="">
+                </div>
+                <div id="right">
+
+                    <div id="splt1" class="splitingdv">
+                        <h1 id="sh1">Services</h1>
+                        <h1 id="sh2">Services</h1>
+                    </div>
+                    <div id="splt2" class="splitingdv">
+                        <h1 id="sh3">Explore</h1>
+                        <h1 id="sh4">Explore</h1>
+                    </div>
+                    <div id="splt3" class="splitingdv">
+                        <h1 id="sh5">Reviews</h1>
+                        <h1 id="sh6">Reviews</h1>
+                    </div>
+                    <div id="splt4" class="splitingdv">
+                        <h1 id="sh7">Contant</h1>
+                        <h1 id="sh8">Contant</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="maintext">
+                    <h1>Get a seamless booking experience at one place.</h1>
+                    <h2>where hospitality meets <br>convenience.</h2>
+                </div>
+                <div class="linecover">
+                    <div id="line"></div>
+                    <div id="lcover"></div>
+                </div>
+            </div>
+            <div class="rightm">
+                <img src="../src/imges/room2.png" alt="">
+                <img src="../src/imges/khana2.png" alt="">
+                <img src="../src/imges/table2.png" alt="">
+            </div>
+        </div>
+        <div id="card1" class="section">
+            <div class="keep">
+                <div id="leftd">
+                    <h1>And we can help <br> you, too. </h1> <br>
+                    <span>"A single place for all your booking <br> find here, where you can't find anywhere.
+                        Seriously."</span>
+                    <br><br>
+                    <div class="profile">
+                        <div id="pic"></div>
+                        <div class="name">- Rudra Chourey.</div>
+                    </div>
+                </div>
+                <div id="rightd">
+                    <div id="thread">
+                        <img src="../src/imges/sidearrow.png" alt="">
+                        <div class="covern"></div>
+                    </div>
+                    <div id="scrolling">
+                        <h1>Feeling excited!! <br>keep scrolling</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card2" class="section">
+            <div class="topcheck">
+                <div id="destin">
+                    <div class="checkin">
+                        <h1> Destination. <br> <br> <span id="firstdesti" > where are you going</span> </h1>
+                        <div class="Destination">
+                            <div class="h3">
+                                <h3>Bhopal</h3>
+                            </div>
+                            <hr>
+                            <div class="h3">
+                                <h3> Delhi </h3>
+                            </div>
+                            <hr>
+                            <div class="h3">
+                                <h3> Mumbai </h3>
+                            </div>
+                            <hr>
+                            <div class="h3">
+                                <h3> Chennai </h3>
+                            </div>
+                            <hr>
+                            <div class="h3">
+                                <h3> Bangalore </h3>
+                            </div>
+                            <hr>
+                            <div class="h3">
+                                <h3> Goa </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="check" class="checkin">
+                        <h1>Check-in & check-Out <br><br> <span>add dates here</span> </h1>
+                    </div>
+                    <div class="checkin">
+                        <a href="/map" target="_blank">
+                            <div id="button">
+                                <h5>book</h5>
+                                <div id="dout"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+
+    <div class="calendar">
+        <div class="calendar-header">
+            <span class="month-picker" id="month-picker">February</span>
+            <div class="year-picker">
+                <span class="year-change" id="prev-year">
+                    <pre><</pre>
+                </span>
+                <span id="year">2021</span>
+                <span class="year-change" id="next-year">
+                    <pre>></pre>
+                </span>
+            </div>
+        </div>
+        <div class="calendar-body">
+            <div class="calendar-week-day">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="calendar-days"></div>
+        </div>
+        <div class="calendar-footer">
+            <div class="toggle">
+                <div class="dark-mode-switch">
+                    <div class="dark-mode-switch-ident"></div>
+                </div>
+            </div>
+        </div>
+        <div class="month-list"></div>
+    </div>
+            <div class="bottumcheck">
+                <div class="discov">
+                    <h1> Discover Cities With KOTHIK. </h1>
+                    <div id="overflow">
+                        <div id="citysname">
+                            <h1 id="bhopal">Bhopal</h1>
+                            <h1 id="delhi"> Delhi</h1>
+                            <h1 id="mumbai">Mumbai</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="citys">
+                    <div id="citi1" class="citi">
+                        <h1>Bhopal / </h1>
+                        <img src="../src/imges/bhopal.png" alt="">
+                    </div>
+                    <div id="citi2" class="citi">
+                        <h1>Delhi /</h1>
+                        <img src="../src/imges/delhi (2).png" alt="">
+                    </div>
+                    <div id="citi3" class="citi">
+                        <h1>Mumbai</h1>
+                        <img src="../src/imges/mumbai.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="lampcontainer" class="section">
+            <div id="grid">
+                <div id="rgrid">
+                    <h1>Build trust <br>& brand <br>authority</h1>
+                </div>
+                <div id="lamp">
+                    <img src="../src/imges/./62aca710dc61be8ed21f5b83_Lamp.svg" alt="">
+                </div>
+                <div id="lgrid">
+                    <span>What's the secret?</span>
+                    <h1>Explore our services,<br> book your next...</h1>
+                    <div id="loop">
+                        <a href="/room" target="_blank">
+                            <h1 style="color:  #B38A6D;" >Rooms</h1>
+                        </a>
+                        <a href="/table" target="_blank">
+                            <h1 style="color:  #AF4B0F;" >Table</h1>
+                        </a>
+                        <a href="/food" target="_blank">
+                            <h1 style="color: #76b474 ;" >Food</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="linkedincontainer" class="section">
+            <div id="linkedintext">
+                <h2>LET'S TRANSFORM </h2>
+                <h1>YOUR SEARCH</h1>
+            </div>
+            <div class="aftercontainer">
+                <div class="afterb">
+                    <div id="before">
+                        <h1>BEFORE</h1>
+                    </div>
+                    <div class="wraperx">
+                        <div id="before2">
+                            <div id="round"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="explore">
+                    <h1>Explore our work</h1>
+                    <img src="../src/imges/./62aca710dc61be356b1f5bba_Vector 22.svg" alt="">
+                </div>
+            </div>
+            <div id="linkedin1" class="linkedin">
+                <div id="page1">
+                    <h1>Boring and <br> undifferentiated</h1>
+                    <div class="raper">
+                        <div class="follow">
+                            <h6>Follow+</h6>
+                        </div>
+                        <div class="smile">
+                            <div class="emoji">
+                                <img src="../src/imges/smile.png" alt="">
+                            </div>
+                            <h5>Boring websites <br> <span>1w 6 followers</span> </h5>
+                        </div>
+                        <div class="para">
+                            <p>You're probably wondering many websites for your bookings. We're not going to tell
+                                you what right for you now, if you click the link, you know what is right for you https: <br>
+                                //www.Kothik.com</p>
+                        </div>
+                        <div class="imgdiv"></div>
+                        <div class="like">
+                            <img class="likei mg1"
+                                src="../src/imges/./62b356f8778f55b0ceaabda8_Linkedin-Insightful-Icon-Lamp250.png" alt="">
+                            <img class="likei mg2"
+                                src="../src/imges/62b356f856dfe28898967dd0_Linkedin-Like-Icon-Thumbup250.png" alt="">
+                            <span>and 2 others</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="page2">
+                    <div class="tape_left"></div>
+                    <div class="tape_right"></div>
+                    <div class="photo"></div>
+                    <div class="h5">
+                        <h5>Us Engagement: What, Why, and Best Practices Explained</h5>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Competition is getting only more fierce with rapid advancements in technology and increasing
+                            uptake of new tech. <br> <br>
+                            This makes the sturdy old business model of making a good product and relying on word of
+                            mouth rather outdated. <br> <br>
+                            And that’s where sales engagement comes into play.<br><br>
+                            The users convenience that worked yesterday might not work today. You need to redefine how you
+                            interact with your prospective buyers and when to reach out to them to increase
+                            conversions.<br> <br>
+                            According to Forrester, 70% of companies leading in optimizing sales engagement processes
+                            are seeing higher win rates.<br><br>
+                        </p>
+                    </div>
+                </div>
+                <div id="page3">
+                    <div class="lowtraffic" id="lowtraffic1">
+                        <h1>high bounce rate</h1>
+                    </div>
+                    <div class="working">
+                        <h3>"Working with writers who don't understand our technical scope of work..."</h3>
+                        <h6>Sad B2B marketer is sad</h6>
+                    </div>
+                    <div class="lowtraffic">
+                        <h1>low <br> traffic</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="linkedin2" class="linkedin">
+                <div id="page1">
+                    <h1>Unique and<br>differentiated</h1>
+                    <div class="raper">
+                        <div class="follow">
+                            <h6>Follow+</h6>
+                        </div>
+                        <div class="smile">
+                            <div class="emoji">
+                                <img src="../src/imges/62bb50b51337099ae9bc72a5_Screen Shot 2022-06-28 at 3.04.16 PM.png"
+                                    alt="">
+                            </div>
+                            <h5>Kothik <br> <span>3mo 21,389 followers</span> </h5>
+                        </div>
+                        <div class="para">
+                            <p>How to make your sales team ♥️ their job: <br>
+                                1—Treat their time as precious (because it is) <br>
+                                Next steps aren't just for sales calls. Give them actionable next steps in every
+                                meeting.<br>
+                                2—Don’t forget where you came from (remember: their paycheck is your paycheck)<br>
+                                Show your team you’re there to help them succeed. Stop focusing on metrics during your
+                                1:1’s, use the time for coaching instead... <br>
+                                #sales #leadership #hospitality #convenience</p>
+                        </div>
+                        <div class="imgdiv"></div>
+                        <div class="like">
+                            <img class="likei mg1"
+                                src="../src/imges/./62b356f8778f55b0ceaabda8_Linkedin-Insightful-Icon-Lamp250.png" alt="">
+                            <img class="likei mg2"
+                                src="../src/imges/62b356f808da90b0b88ce79c_Linkedin-Support-Icon-HeartinHand250.png"
+                                alt="">
+                            <span>and 73 others</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="page2">
+                    <div class="tape_left"></div>
+                    <div class="tape_right"></div>
+                    <div class="photo">
+                        <h3>Top 5 Ways You Can Use Self-Service Analytics For Demand Generation</h3>
+                        <h4>As the Director of Demand Gen at ThoughtSpot, I’m responsible for optimizing our campaigns
+                            and every customer touchpoint.
+                            ‍<br> <br>
+                            No biggie, right?
+                        </h4>
+                    </div>
+                    <div class="h5">
+                        <h5>Users Convenience: What, Why, and Best Practices Explained</h5>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Competition is getting only more fierce with rapid advancements in technology and increasing
+                            uptake of new tech. <br> <br>
+                            This makes the sturdy old business model of making a good product and relying on word of
+                            mouth rather outdated. <br> <br>
+                            And that’s where users convenience comes into play.<br><br>
+                            The users tactics that worked yesterday might not work today. You need to redefine how you
+                            interact with your prospective buyers and when to reach out to them to increase
+                            conversions.<br> <br>
+                            According to Forrester, 70% of companies leading in optimizing sales engagement processes
+                            are seeing higher win rates.<br><br>
+                        </p>
+                    </div>
+                </div>
+                <div id="page3">
+                    <div class="lowtraffic" id="lowtraffic1">
+                        <h1>low bounce rate</h1>
+                    </div>
+                    <div class="working">
+                        <h3>"Partnering with a team who gets us, our service, and clear storytelling..."</h3>
+                        <h6>Happy customer with a clear content plan</h6>
+                    </div>
+                    <div class="lowtraffic">
+                        <h1>high <br> traffic</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="card">
+                <h2>
+                    subscribe to our <br />
+                    newsletter and get a
+                    <span>
+                        10% <br />
+                        discount.</span>
+                </h2>
+                <input type="text" placeholder="name" />
+                <input type="text" placeholder="enter your email address" />
+                <div id="checkdiv">
+                    <div id="check">
+                        <div id="checkcolor"></div>
+                    </div>
+                    <p>Accept <a href=""><span>terms and conditions.</span></a></p>
+                </div>
+                <button>subscribe now</button>
+            </div>
+
+            <div id="logo">
+                <img src="../src/imges/7.png" alt="" />
+            </div>
+
+            <div id="details">
+                <div class="col">
+                    <h4>cities.</h4>
+                    <a href="#">New Delhi</a>
+                    <a href="#">Bhopal</a>
+                    <a href="#">Mumbai</a>
+                    <a href="#">Pune <br />(comming soon)</a>
+                    <a href="#">Hyderabad <br />
+                        (comming soon)</a>
+                </div>
+
+                <div class="col">
+                    <h4>help.</h4>
+                    <a href="#">extended stay</a>
+                    <a href="#">reviews</a>
+                    <a href="#">buy us a coffee</a>
+                    <a href="#">my orders</a>
+                    <a href="#">interest</a>
+                </div>
+
+                <div class="col install">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <div class="row">
+                        <img src="../src/imges/app.jpg" alt="" />
+                        <img src="../src/imges/play.jpg" alt="" />
+                    </div>
+                    <p>Secured Payment Gateway</p>
+                    <img src="../src/imges/pay.png" alt="" />
+                </div>
+            </div>
+
+            <div id="bottom">
+                <div id="follow">
+                    <h4>follow us</h4>
+                    <div id="icon">
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+                <div id="copyright">
+                    <p>
+                        &#169 2023, UI Unicorns - experience hospitality made simple with Kothik <span>&#9829</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+        integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+        integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="../javascripts/script.js"></script>
+</body>
+
+</html>

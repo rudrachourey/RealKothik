@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+i {
+    color: grey
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 54px;
+    color: #222;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    color: #222222e1;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    /* margin: 15px 0 20px 0; */
+}
+
+li {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding30 {
+    padding: 0px 30px;
+}
+
+button.normal {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 580;
+    padding: 12px 24px;
+    background: #000;
+    color: #ffffffe8;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#mappage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#mapnav {
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: center; */
+}
+
+
+#mapnav #logo {}
+
+.search {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f9fa;
+    gap: 10px;
+}
+
+#mapnav .search {
+    padding: 10px 20px 10px 10px;
+}
+
+input {
+    background-color: #f5f9fa;
+    border: none;
+    padding: 0px 5px;
+    outline: none;
+}
+
+#mapnav input {
+    width: 200px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#mapcenter {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+#mapcenter #mapleft {
+    width: 420px;
+    height: fit-content;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom-right-radius: 7px;
+}
+
+#mapcenter #mapleft #filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mapcenter #mapleft #price #inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0px 20px 0px;
+    /* border: 1px solid beige; */
+}
+
+#mapcenter #mapleft #price #inputs .search {
+    padding: 10px;
+}
+
+#mapcenter #mapleft #price #inputs input {
+    width: 100px;
+    height: 20px;
+}
+
+#mapcenter #mapleft #roomtype select {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 3px 0px 20px 0px;
+}
+
+#mapcenter #mapleft p {
+    margin: 15px 0 20px 0;
+}
+
+#mapcenter #mapleft #conveniences {
+    /* border: 1px solid; */
+    margin: 3px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#mapcenter #mapleft #conveniences .options {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 10px;
+}
+
+#mapcenter #mapleft #conveniences .options .search:active {
+    border: 1px solid black;
+}
+
+#mapcenter #mapleft #conveniences .search {
+    width: fit-content;
+    background-color: white;
+    padding: 0px 15px;
+    box-shadow: 5px 5px 12px -15px #111;
+}
+
+#mapcenter #mapleft #conveniences .search:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#mapcenter #mapleft #guest .search {
+    margin: 3px 0px 20px 0px;
+}
+
+#mapcenter #mapleft #guest .search span {
+    padding: 6px;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#mapcenter #mapleft #guest .search span.num {
+    font-size: 18px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+
+/* Right Section of Map Page */
+
+#mapcenter #mapright {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+#mapcenter #mapright #results {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mapcenter #mapright #results p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapcenter #mapright #mainmap iframe {
+    border-radius: 20px;
+    width: 100%;
+    height: 350px;
+}
+
+#mapcenter #mapright #hotelslist {
+    margin-top: 15px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mapcenter #mapright #hotelslist .arrows i {
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+}
+
+#mapcenter #mapright #hotelslist .hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapcenter #mapright #hotelslist .hotel img {
+    width: 290px;
+    height: 170px;
+    border-radius: 20px;
+}
+
+#mapcenter #mapright #hotelslist .hotel .des {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    gap: 3px;
+}
+
+#mapcenter #mapright #hotelslist .hotel .des h4 {
+    line-height: 20px;
+    font-size: 18px;
+}
+
+#mapcenter #mapright #hotelslist .hotel .des .loc {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#mapcenter #mapright #hotelslist .hotel .des .price {
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    gap: 5px;
+}
+
+#mapcenter #mapright #hotelslist .hotel .des .price h3 {
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1300px){
+    #mapcenter #mapright #hotelslist{
+        flex-direction: column;
+    }
+    #mapcenter #mapright #hotelslist .hotel{
+        flex-direction: row ;
+        margin: 10px 0;
+    }
+    #mapcenter #mapright #hotelslist .hotel .des {
+        margin: 0 15px;
+    }
+}
+@media screen and (max-width: 900px){
+    .unorder{
+        display: none;
+    }
+}
+@media screen and (max-width: 820px){
+    #mapcenter #mapright #hotelslist .hotel .des {
+        width: 250px;
+       
+    }
+    #mapcenter #mapright #hotelslist .hotel img {
+        width: 240px;
+        height: 150px;
+       
+    }
+    #mapcenter #mapleft {
+        display: none;
+    }
+    #mapnav input {
+        width: 200px;
+    }
+    #mapcenter #mapright {
+        width: 100%;
+        
+    }
+    #mapcenter #mapright #mainmap iframe {
+        border-radius: 20px;
+        width: 100%;
+        height: 280px;
+    }
+    .menu{
+
+    }
+    #mapcenter #mapleft {
+        position: absolute;
+        z-index: 10000;
+        background-color: rgb(234, 234, 234);
+        box-shadow: 3px 3px 7px 2px rgba(34, 34, 71, 0.2);
+    }
+    
+    #mapcenter {
+        position: relative;
+    }
+    #mapcenter #mapright {
+       position: absolute;
+       z-index: 1;
+    }
+}
+@media screen and (max-width: 520px){
+    #mapcenter #mapright #hotelslist .hotel .des {
+        width: fit-content;
+       
+    }
+    #mapcenter #mapright #hotelslist .hotel img {
+        width: 200px;
+        height: 110px;
+       
+    }
+    #mapcenter #mapleft {
+        display: none;
+    }
+    #mapnav input {
+        width: 150px;
+    }
+    #mapcenter #mapright {
+        width: 100%;
+        
+    }
+    #mapcenter #mapright #mainmap iframe {
+        border-radius: 20px;
+        width: 100%;
+        height: 250px;
+    }
+}

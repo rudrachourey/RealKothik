@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../src/imges/长.png" style="width: 30px;" >
+    <title><%= title %></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheets/map.css" />
+  </head>
+  <body>
+    <section id="mappage">
+      <div id="mapnav" class="padding30">
+        <div class="menu">
+          <i class="ri-menu-line"></i>
+        </div>
+        <div id="logo"></div>
+        <div class="search">
+          <i class="ri-search-line"></i>
+          <input type="search" placeholder="Search by name or location" />
+        </div>
+        <ul class="unorder">
+          <li>About Us</li>
+          <li>The Perks</li>
+          <li>FAQs</li>
+        </ul>
+        <a href="/"><button class="normal">Join Kothik</button></a>
+      </div>
+
+      <div id="mapcenter">
+        <div id="mapleft" class="padding30">
+          <div id="filters">
+            <h2>Filters</h2>
+            <a href="">Reset</a>
+          </div>
+          <div id="price">
+            <h4>Price</h4>
+            <div id="inputs">
+              <div class="search">
+                <input type="text" placeholder="From" />
+              </div>
+              <div class="search">
+                <input type="text" placeholder="To" />
+              </div>
+            </div>
+          </div>
+          <div id="roomtype">
+            <h4>Room Type</h4>
+            <select name="membership" id="membership" class="search">
+              <option value="free">Single Bedded</option>
+              <option value="bronze">Double Bedded</option>
+              <option value="silver" selected>Lounge</option>
+              <option value="Gold">Penthouse</option>
+            </select>
+          </div>
+          <div id="conveniences">
+            <h4>Conveniences</h4>
+            <div class="options">
+              <div class="search">
+                <i class="ri-tv-line"></i>
+                <p>TV</p>
+              </div>
+              <div class="search">
+                <i class="ri-wheelchair-line"></i>
+                <p>Disabled Acess</p>
+              </div>
+            </div>
+            <div class="options">
+              <div class="search">
+                <i class="ri-plant-line"></i>
+                <p>In the Woods</p>
+              </div>
+              <div class="search">
+                <i class="ri-contrast-drop-line"></i>
+                <p>Hots Tubs</p>
+              </div>
+            </div>
+            <div class="options">
+              <div class="search">
+                <i class="ri-eye-line"></i>
+                <p>Views</p>
+              </div>
+              <div class="search">
+                <i class="ri-windy-fill"></i>
+                <p>Lakes and River</p>
+              </div>
+            </div>
+            <div class="options">
+              <div class="search">
+                <i class="ri-fire-line"></i>
+                <p>Wood Burner</p>
+              </div>
+              <div class="search">
+                <i class="ri-bear-smile-line"></i>
+                <p>Dog Friendly</p>
+              </div>
+            </div>
+            <div class="options">
+              <div class="search">
+                <i class="ri-wifi-line"></i>
+                <p>Wi-Fi</p>
+              </div>
+              <div class="search">
+                <i class="ri-blaze-line"></i>
+                <p>Out Doors Bath</p>
+              </div>
+            </div>
+          </div>
+          <div id="guest">
+            <h4>Number of guests</h4>
+            <div id="inputs">
+              <div class="search">
+                <span class="minus">-</span>
+                <span class="num">01</span>
+                <span class="plus">+</span>
+              </div>
+            </div>
+          </div>
+          <button class="normal">Book Now</button>
+        </div>
+        <div id="mapright" class="padding30">
+          <div id="results">
+            <h2>Results</h2>
+            <p>Newest<i class="ri-arrow-down-s-line"></i></p>
+          </div>
+          <div id="mainmap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d135615.84634886717!2d77.39399194146398!3d23.165079140300506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43057e5800ab%3A0xf0646ccebaa21cbe!2sRadisson%20Hotel%20Bhopal!5e0!3m2!1sen!2sin!4v1676276369193!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div id="hotelslist">
+            <div class="arrows">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div class="hotel">
+              <img src="../src/imges/exterior-rendering.jpg" alt="" />
+              <div class="des">
+                <h4>Radisson Bhopal</h4>
+                <div class="loc">
+                  <i class="ri-map-pin-line"></i>
+                  <p>Gulmohar Colony</p>
+                </div>
+                <div class="price">
+                  <h3>$80</h3>
+                  <p>/night</p>
+                </div>
+              </div>
+            </div>
+            <div class="hotel">
+              <img src="../src/imges/cq5dam.web.756.756.jpeg" alt="" />
+              <div class="des">
+                <h4>Taj Lake Front</h4>
+                <div class="loc">
+                  <i class="ri-map-pin-line"></i>
+                  <p>Bhadbhada Road</p>
+                </div>
+                <div class="price">
+                  <h3>$90</h3>
+                  <p>/night</p>
+                </div>
+              </div>
+            </div>
+            <div class="hotel">
+              <img src="../src/imges/the-ten-suites.jpg" alt="" />
+              <div class="des">
+                <h4>The Ten Suites</h4>
+                <div class="loc">
+                  <i class="ri-map-pin-line"></i>
+                  <p>Civil Lines</p>
+                </div>
+                <div class="price">
+                  <h3>$75</h3>
+                  <p>/night</p>
+                </div>
+              </div>
+            </div>
+            <div class="arrows">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var minus = document.querySelector(".minus");
+      var plus = document.querySelector(".plus");
+      var num = document.querySelector(".num");
+
+      let a = 1;
+      plus.addEventListener("click", () => {
+        a++;
+        a = a < 10 ? "0" + a : a;
+        num.innerHTML = a;
+      });
+      minus.addEventListener("click", () => {
+        if (a > 1) {
+          a--;
+          a = a < 10 ? "0" + a : a;
+          num.innerHTML = a;
+        }
+      });
+      var flag = 1;
+      document.querySelector(".menu").addEventListener("click", () => {
+        if (flag === 1) {
+          document.querySelector("#mapleft").style.display = "none";
+          flag = 0;
+        } else {
+          document.querySelector("#mapleft").style.display = "flex";
+          flag = 1;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../stylesheets/room.css">
+    <link rel="icon" href="../src/imges/长.png" style="width: 30px;" >  
+    <title><%= title %></title>
+</head>
+<body>
+    <div id="roomui">
+        <div id="roomnav">
+            <div id="left">
+                <img src="/src/imges/7.png" alt="">
+            </div>
+            <div id="mid">
+                <input type="search" placeholder="find hotel / lounge and many more">
+                <i class="ri-search-line"></i>
+            </div>
+            <div id="right">
+                <a href=""><i class="ri-home-fill"></i></a>
+                <a href=""><i class="ri-bookmark-3-fill"></i></a>
+                <a href=""><i class="ri-map-pin-fill"></i></a>
+                <button><i class="ri-login-box-fill"></i> <h6>
+                    Login/Signup
+                </h6> 
+                <div class="dot"></div>
+            </button>
+            </div>
+        </div>
+        <div id="secondarynav">
+            <div id="left" class="gridleft">
+                <h3>Room name</h3>
+            </div>
+            <div id="mid" class="gridmid">
+                <h3>Bed type</h4>
+                    <h3>Room Floor</h3>
+                    <h3>Room Facility</h3>
+            </div>
+            <div id="right" class="gridright">
+                <h3 class="status">Status</h3>
+                <button>
+                    <i class="ri-calendar-2-line"></i>
+                    <h6>Schedule</h6>
+                    <div class="dot"></div>
+                </button>
+            </div>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <span class="month-picker" id="month-picker">February</span>
+                    <div class="year-picker">
+                        <span class="year-change" id="prev-year">
+                            <pre><</pre>
+                        </span>
+                        <span id="year">2021</span>
+                        <span class="year-change" id="next-year">
+                            <pre>></pre>
+                        </span>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div class="calendar-week-day">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+                <div class="calendar-footer">
+                    <div class="toggle">
+                        <div class="dark-mode-switch">
+                            <div class="dark-mode-switch-ident"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="month-list"></div>
+            </div>
+        </div>
+
+        <div id="roomtable">
+            <div class="roomrows">
+                <div class="roomleft gridleft">
+                    <img src="../src/imges/bed.avif" alt="">
+                    <div class="roomdets">
+                        <span>#0002</span>
+                        <h4>Delux B-0004</h4>
+                    </div>
+                </div>
+                <div class="roommid gridmid">
+                    <h4>Doubled Bed</h4>
+                    <h4>Ground Floor A-109</h4>
+                    <h4>Kitchen facilities, like: fridge, coffee maker and microwave </h4>
+                </div>
+                <div class="roomright gridright">
+                    <div class="roomdets">
+                        <p class="booked">Booked</p>
+                        <h4>Feb 26th - 28th</h4>
+                    </div>
+                    <div class="more">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <!-- <button>
+                        <i class="ri-calendar-2-line"></i>
+                        Check Schedule
+                    </button> -->
+                </div>
+            </div>
+            <div class="roomrows">
+                <div class="roomleft gridleft">
+                    <img src="/src/imges/photo-1560185893-a55cbc8c57e8.avif" alt="">
+                    <div class="roomdets">
+                        <span>#0004</span>
+                        <h4>King B-923</h4>
+                    </div>
+                </div>
+                <div class="roommid gridmid">
+                    <h4>Triple Bed</h4>
+                    <h4>Top Floor F-10</h4>
+                    <h4>TV with cable. Hair Dryer. Essentially kit, like: soap, shampoo, body milk, conditioner</h4>
+                </div>
+                <div class="roomright gridright">
+                    <div class="roomdets">
+                        <h4 class="avail">Available</h4>
+                    </div>
+                    <div class="more">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <!-- <button>
+                        <i class="ri-calendar-2-line"></i>
+                        Check Schedule
+                    </button> -->
+                </div>
+            </div>
+            <div class="roomrows">
+                <div class="roomleft gridleft">
+                    <img src="../src/imges/premium_photo-1661964402307-02267d1423f5--nAnjrBoj-transformed.jpeg" alt="">
+                    <div class="roomdets">
+                        <span>#0003</span>
+                        <h4>Queen F-675</h4>
+                    </div>
+                </div>
+                <div class="roommid gridmid">
+                    <h4>Single Bed</h4>
+                    <h4>4rth floor D-21</h4>
+                    <h4>Toiletries (eg shampoo, lotion, etc.)
+Personal care (combs, shaving cream, razor, shower cap)</h4>
+                </div>
+                <div class="roomright gridright">
+                    <div class="roomdets">
+                        <!-- <p class="status">Available</p> -->
+                        <p class="booked">Booked</p>
+                        <h4>Feb 22th - March 02nd</h4>
+                    </div>
+                    <div class="more">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <!-- <button>
+                        <i class="ri-calendar-2-line"></i>
+                        Check Schedule
+                    </button> -->
+                </div>
+            </div>
+            <div class="roomrows">
+                <div class="roomleft gridleft">
+                    <img src="../src/imges/room01.avif" alt="">
+                    <div class="roomdets">
+                        <span>#0005</span>
+                        <h4>Super Delux FB-809</h4>
+                    </div>
+                </div>
+                <div class="roommid gridmid">
+                    <h4>Quad Bed</h4>
+                    <h4>2nd Floor B-12</h4>
+                    <h4>Flat screen television set . Free high speed Wi-Fi. An service cabinet, AC Room.</h4>
+                </div>
+                <div class="roomright gridright">
+                    <div class="roomdets">
+                        <h4 class="avail">Available</h4>
+                    </div>
+                    <div class="more">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <h2>Showing 4 out of 20 results</h2>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+    integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../javascripts/room.js"></script>
+</body>
+</html>
